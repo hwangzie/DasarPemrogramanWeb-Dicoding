@@ -6,15 +6,23 @@
 
     <!-- My Own Style -->
     <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- goole font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  
   </head>
 
   <body>
     <header>
-      <h1>Bandung</h1>
-      <p>
-        Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi
-        tersebut.
-      </p>
+      <div class="jumbotron">
+        <h1>Bandung</h1>
+        <p>
+          Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi
+          tersebut.
+        </p>
+      </div>
       <nav>
         <ul>
           <li>
@@ -32,9 +40,9 @@
     <main>
 
       <div id="content">
-        <article id="sejarah">
+        <article class="card" id="sejarah">
           <h2 >Sejarah</h2>
-          <img src="assets/image/history.jpg" alt="Sejarah" />
+          <img class="featured-image" src="assets/image/history.jpg" alt="Sejarah" />
           <p>
             Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh
             lava Gunung Tangkuban Parahu yang lalu membentuk telaga. Legenda yang diceritakan oleh
@@ -54,9 +62,9 @@
           </p>
         </article>
         
-        <article id="geografis">
+        <article class="card" id="geografis">
           <h2 >Geografis</h2>
-          <img src="assets/image/geografis.jpg" alt="Geografis" />
+          <img class="featured-image" src="assets/image/geografis.jpg" alt="Geografis" />
           <p>
             Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah
             mangkok raksasa, secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat,
@@ -73,7 +81,7 @@
           </p>
         </article>
     
-        <article id="wisata">
+        <article class="card" id="wisata">
           <h2 >Wisata</h2>
           <p>
             Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati
@@ -84,7 +92,7 @@
           
           <section>
             <h3>Farm House Lembang</h3>
-            <img src="assets/image/farm-house.jpg" alt="Farm house" />
+            <img class="featured-image" src="assets/image/farm-house.jpg" alt="Farm house" />
             <p>
               Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi
               pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas
@@ -107,49 +115,49 @@
         </article>
 
       <aside>
-        <header>
-          <article>
-            <h2>Kota Bandung</h2>
-            <p>Kota Kembang Paris van Java</p>
-            <figure>
-              <img src="assets/image/bandung-badge.png" />
-              <figcaption>Lambang</figcaption>
-            </figure>
-          </article>
-        </header>
+        <article class="profile card">
+          <header>
+              <h2>Kota Bandung</h2>
+              <p>Kota Kembang Paris van Java</p>
+              <figure>
+                <img src="assets/image/bandung-badge.png" />
+                <figcaption>Lambang</figcaption>
+              </figure>
+            </header>
+            
+            <section>
+              <h3>Informasi lainnya</h3>
+              
+              <table>
+                <tr>
+                  <th>Negara</th>
+                  <td>Indonesia</td>
+                </tr>
 
-        <section>
-          <h3>Informasi lainnya</h3>
-          
-          <table>
-            <tr>
-              <th>Negara</th>
-              <td>Indonesia</td>
-            </tr>
-
-            <tr>
-              <th>Hari Jadi</th>
-              <td>25 September 1810</td>
-            </tr>
-
-            <tr>
-              <th>Luas Total</th>
-              <td>167,67 km<sup>2</sup></td>
-            </tr>
-
-            <tr>
-              <th>Bahasa Daerah</th>
-              <td>Sunda</td>
-            </tr>
-
-            <tr>
-              <th>Kode Telepon</th>
-              <td>+62 22</td>
-            </tr>
-          </table>
-        </section>
+              <tr>
+                <th>Hari Jadi</th>
+                <td>25 September 1810</td>
+              </tr>
+              
+              <tr>
+                <th>Luas Total</th>
+                <td>167,67 km<sup>2</sup></td>
+              </tr>
+              
+              <tr>
+                <th>Bahasa Daerah</th>
+                <td>Sunda</td>
+              </tr>
+              
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62 22</td>
+              </tr>
+            </table>
+          </section>
+        </article>
       </aside>
-
+      
     </main>
 
     <footer>
